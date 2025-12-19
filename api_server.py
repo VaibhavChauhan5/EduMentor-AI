@@ -69,7 +69,7 @@ class ChatRequest(BaseModel):
 
 # Create a process pool for running the chatbot
 chatbot_process = None
-chatbot_path = os.path.join(os.path.dirname(__file__), "ain.py")
+chatbot_path = os.path.join(os.path.dirname(__file__), "main.py")
 
 # Dictionary to store conversation history by session ID
 conversation_history = {}
@@ -167,7 +167,7 @@ async def get_chatbot_response(message: str, session_id: str = None, content_typ
                     sys.path.append(ain_dir)
                 
                 # Import modules for creating agent if needed
-                from ain import (
+                from main import (
                     bedrock_model, http_request, 
                     general_summary, agent_prompt,
                     get_agent_for_content_type
