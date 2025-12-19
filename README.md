@@ -2,7 +2,7 @@
 
 ## 🚀 Overview
 
-EduMentor is a personalized learning companion that integrates with diverse content APIs to provide:
+EduMentor AI is a personalized learning companion that integrates with diverse content APIs to provide:
 - **Specialized Guidance**: Targeted agents for different learning formats (Books, Courses, Audiobooks, Events).
 - **Personalized Roadmaps**: Curated journeys from beginner to expert level.
 - **Time Estimates**: Realistic study schedules based on content depth.
