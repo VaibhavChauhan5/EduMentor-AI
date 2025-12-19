@@ -1,8 +1,4 @@
-# 🎓 EduMentor: Universal Learning Assistant
-
-EduMentor is a state-of-the-art, AI-powered system designed to help users navigate and master knowledge across any learning platform. This project provides a premium, multi-agent experience with specialized mentors for various content formats.
-
-![EduMentor Preview](https://via.placeholder.com/800x400?text=EduMentor+Learning+Assistant+Preview)
+# 🎓 EduMentor AI: Universal Learning Assistant
 
 ## 🚀 Overview
 
