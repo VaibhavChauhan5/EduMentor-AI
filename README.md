@@ -48,8 +48,7 @@ EduMentor is a personalized learning companion that integrates with diverse cont
 - **Node.js** (v18+)
 - **Python** (3.9+)
 - **AWS Account** (with Bedrock access)
-- **EduMentor AI
-form API Key** (e.g., Udemy, Coursera, or custom integration)
+- **Course Platform API Key** (e.g., Udemy, Coursera, or custom integration)
 
 ### 2. Backend Setup
 1. Clone the repository and navigate to the root.
