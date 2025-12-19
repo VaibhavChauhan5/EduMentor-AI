@@ -73,23 +73,6 @@ const Title = styled.h1`
   }
 `;
 
-const SubTitle = styled.div`
-  font-size: 14px;
-  color: #94a3b8;
-  margin-left: 48px;
-  
-  @media (max-width: 768px) {
-    font-size: 12px;
-    margin-left: 40px;
-  }
-  
-  @media (max-width: 480px) {
-    font-size: 11px;
-    margin-left: 0;
-    margin-top: 2px;
-  }
-`;
-
 const HeaderActions = styled.div`
   display: flex;
   align-items: center;
@@ -180,10 +163,9 @@ const Header: FC<HeaderProps> = ({ onResetChat }) => {
     <HeaderContainer>
       <div>
         <Logo>
-          <LogoIcon>O</LogoIcon>
-          <Title>O'Reilly <span>Learning Assistant</span></Title>
+          <LogoIcon>E</LogoIcon>
+          <Title>EduMentor <span>AI</span></Title>
         </Logo>
-        <SubTitle>Powered by TAVANT</SubTitle>
       </div>
       <HeaderActions>
         {user && (

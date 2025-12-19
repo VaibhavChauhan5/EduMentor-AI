@@ -21,8 +21,8 @@ import uvicorn
 
 load_dotenv()
 
-API_BASE_URL = "https://api.oreilly.com/api/v1/integrations/content/"
-ACCESS_TOKEN = os.getenv("OREILLY_API_KEY")
+API_BASE_URL = os.getenv("COURSE_API_BASE_URL", "https://api.example.com/v1/content/")
+ACCESS_TOKEN = os.getenv("COURSE_API_KEY")
 
 # Enhanced AWS credentials setup for permanent access
 def setup_aws_credentials():
@@ -91,7 +91,7 @@ API CALL FORMAT:
   "method": "GET",
   "url": "https://api.oreilly.com/api/v1/integrations/content/?any_topic_slug=[topic]&limit=30&status=Live",
   "headers": {
-    "Authorization": "Token 0b1beb3695ed3277cf825ee92c0168c7e8eafaf1",
+    "Authorization": "Token [YOUR_OREILLY_TOKEN]",
     "Accept": "application/json"
   }
 }
@@ -140,7 +140,7 @@ MENTORSHIP RULES:
 - Suggest prerequisites if needed
 - Offer encouragement and practical advice
 - Answer questions about "how to start", "how long", "what order"
-- Be supportive and motivating like a mentor
+- Be supportive and motivating like a EduMentor AI
 - Adapt recommendations based on user's experience level
 """
 
@@ -155,7 +155,7 @@ API CALL FORMAT:
   "method": "GET",
   "url": "https://api.oreilly.com/api/v1/integrations/content/?any_topic_slug=[topic]&content_format=book&limit=30",
   "headers": {
-    "Authorization": "Token 0b1beb3695ed3277cf825ee92c0168c7e8eafaf1",
+    "Authorization": "Token [YOUR_OREILLY_TOKEN]",
     "Accept": "application/json"
   }
 }
@@ -226,7 +226,7 @@ API CALL FORMAT:
   "method": "GET",
   "url": "https://api.oreilly.com/api/v1/integrations/content/?any_topic_slug=[topic]&content_format=video&limit=30",
   "headers": {
-    "Authorization": "Token 0b1beb3695ed3277cf825ee92c0168c7e8eafaf1",
+    "Authorization": "Token [YOUR_OREILLY_TOKEN]",
     "Accept": "application/json"
   }
 }
@@ -302,7 +302,7 @@ API CALL FORMAT:
   "method": "GET",
   "url": "https://api.oreilly.com/api/v1/integrations/content/?any_topic_slug=[topic]&content_format=video&limit=30",
   "headers": {
-    "Authorization": "Token 0b1beb3695ed3277cf825ee92c0168c7e8eafaf1",
+    "Authorization": "Token [YOUR_OREILLY_TOKEN]",
     "Accept": "application/json"
   }
 }
@@ -345,7 +345,7 @@ API CALL FORMAT:
   "method": "GET",
   "url": "https://api.oreilly.com/api/v1/integrations/content/?any_topic_slug=[topic]&content_format=audiobook&limit=30&status=Live",
   "headers": {
-    "Authorization": "Token 0b1beb3695ed3277cf825ee92c0168c7e8eafaf1",
+    "Authorization": "Token [YOUR_OREILLY_TOKEN]",
     "Accept": "application/json"
   }
 }
@@ -389,7 +389,7 @@ API CALL FORMAT:
   "method": "GET",
   "url": "https://api.oreilly.com/api/v1/integrations/content/?any_topic_slug=[topic]&content_format=live-training&limit=30&status=Live",
   "headers": {
-    "Authorization": "Token 0b1beb3695ed3277cf825ee92c0168c7e8eafaf1",
+    "Authorization": "Token [YOUR_OREILLY_TOKEN]",
     "Accept": "application/json"
   }
 }

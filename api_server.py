@@ -25,7 +25,7 @@ async def lifespan(app: FastAPI):
     print("🔌 Shutting down server...")
 
 # Create FastAPI app with lifespan manager
-app = FastAPI(title="O'Reilly Learning Assistant API", lifespan=lifespan)
+app = FastAPI(title="EduMentor AI - Learning Assistant", lifespan=lifespan)
 
 # Add CORS middleware to allow cross-origin requests from the frontend
 default_origins = [
